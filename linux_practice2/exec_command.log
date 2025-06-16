@@ -1,0 +1,177 @@
+    1  ls /
+    2* ls /
+    3  #
+    4  \! . \: \[ \[\[ ]] add-shell addgroup addpart adduser agetty alias apt apt-cache apt-cdrom apt-config apt-get apt-key apt-mark arch awk b2sum badblocks base32 base64 basename basenc bash bashbug bg bind blkdiscard blkid blkzone blockdev break builtin caller captoinfo case cat cd chage chattr chcon chcpu chfn chgpasswd chgrp chmem chmod choom chown chpasswd chroot chrt chsh cksum clear clear_console cmp comm command compgen complete compopt continue coproc cp cpgr cppw csplit ctrlaltdel cut dash date dd deb-systemd-helper deb-systemd-invoke debconf debconf-apt-progress debconf-communicate debconf-copydb debconf-escape debconf-set-selections debconf-show debugfs declare delgroup delpart deluser df diff diff3 dir dircolors dirname dirs disown dmesg dnsdomainname do domainname done dpkg dpkg-deb dpkg-divert dpkg-fsys-usrunmess dpkg-maintscript-helper dpkg-preconfigure dpkg-query dpkg-realpath dpkg-reconfigure dpkg-split dpkg-statoverride dpkg-trigger du dumpe2fs e2freefrag e2fsck e2image e2label e2mmpstatus e2scrub e2scrub_all e2undo e4crypt e4defrag echo egrep elif else enable env esac eval exec exit expand expiry export expr factor faillock faillog fallocate false fc fg fgrep fi filefrag fincore find findfs findmnt flock fmt fold for fsck fsck.cramfs fsck.ext2 fsck.ext3 fsck.ext4 fsck.minix fsfreeze fstab-decode fstrim function getconf getent getopt getopts getty gpasswd gpgv grep groupadd groupdel groupmems groupmod groups grpck grpconv grpunconv gunzip gzexe gzip hardlink hash head help history hostid hostname hwclock iconv iconvconfig id if in infocmp infotocap install installkernel invoke-rc.d ionice ipcmk ipcrm ipcs ischroot isosize jobs join kill killall5 last lastb lastlog ld.so ldattach ldconfig ldd let link linux32 linux64 ln local locale localedef logger login logname logout logsave losetup ls lsattr lsblk lscpu lsfd lsipc lsirq lslocks lslogins lsmem lsns mapfile mawk mcookie md5sum md5sum.textutils mesg mkdir mke2fs mkfifo mkfs mkfs.bfs mkfs.cramfs mkfs.ext2 mkfs.ext3 mkfs.ext4 mkfs.minix mkhomedir_helper mklost+found mknod mkswap mktemp more mount mountpoint mv namei nawk newgrp newusers nice nisdomainname nl nohup nologin nproc nsenter numfmt od pager pam-auth-update pam_getenv pam_namespace_helper pam_timestamp_check partx passwd paste pathchk perl perl5.36.0 pidof pinky pivot_root pldd policy-rc.d popd pr printenv printf prlimit ptx pushd pwck pwconv pwd pwhistory_helper pwunconv rbash read readarray readlink readonly readprofile realpath remove-shell rename.ul renice reset resize2fs resizepart return rev rgrep rm rmdir rmt rmt-tar rtcwake run-parts runcon runuser savelog script scriptlive scriptreplay sdiff sed select seq service set setarch setpriv setsid setterm sg sh sha1sum sha224sum sha256sum sha384sum sha512sum shadowconfig shift shopt shred shuf sleep sort source split start-stop-daemon stat stdbuf stty su sulogin sum suspend swaplabel swapoff swapon switch_root sync tabs tac tail tar tarcat taskset tee tempfile test then tic time timeout times toe touch tput tr trap true truncate tset tsort tty tune2fs type typeset tzselect uclampset ulimit umask umount unalias uname uncompress unexpand uniq unix_chkpwd unix_update unlink unset unshare until update-alternatives update-passwd update-rc.d update-shells useradd userdel usermod users utmpdump vdir vigr vipw wait wall wc wdctl whereis which which.debianutils while who whoami wipefs xargs yes ypdomainname zcat zcmp zdiff zdump zegrep zfgrep zforce zgrep zic zless zmore znew zramctl \{ } 
+    5  pwd
+    6  cd /root
+    7  pwd
+    8  cd usr
+    9  cd /usr
+   10  pwd
+   11  cd /home
+   12  mkdir test1
+   13  ls
+   14  mkdir test2/test3
+   15  mkdir -p test2/test3
+   16  ls
+   17  cd test2
+   18  ls
+   19  cd home
+   20  cd /home
+   21  touch test1/index.php
+   22  ls test1
+   23  cd /home/test1 && ls
+   24  cd /home1/test1
+   25  cd /home/test1
+   26  cp index.php copy.php
+   27  ls
+   28  cd /home
+   29  cp -r test1 test4
+   30  ls
+   31  ls test4
+   32  cd /home
+   33  mv test2/test3 test3
+   34  ls
+   35  cd /home
+   36  mv test4 test1_copy
+   37  ls
+   38  ls test1
+   39  rm test1/copy.php
+   40  ls test1
+   41  rm -r test3
+   42  ls
+   43  rm test1_copy/*.php
+   44  ls test1_copy
+   45  '# Hello World' > README.md
+   46  echo '# Hello World' > README.md
+   47  cat README.md
+   48  echo '# Server Lesson' > README.md
+   49  cat README.md
+   50  echo 'Linux Practice' >> README.md
+   51  echo '-----------------' >> README.md
+   52  cat README.md
+   53  apt update -y && apt install -y vim
+   54  cd /home
+   55  vi README.md
+   56  vi README.md
+   57  vi README.md
+   58  cd /root
+   59  mkdir server_lesson && cd server_lesson
+   60  apt update -y && apt install -y git
+   61  git version
+   62  git init
+   63  touch first.txt
+   64  git branch
+   65  git status
+   66  gir add server_lesson
+   67  git add server_lesson
+   68  git status
+   69  git add first.txt
+   70  git status
+   71  git remote add origin https://github.com/0522724/server_lesson.git
+   72  git remote -v
+   73  git commit -m 'firstcommit'
+   74  git config --global user.name 0522724
+   75  git config --global user.email shimadarina.724@gmail.com
+   76  git commit -m 'firstcommit'
+   77  git log
+   78  git push origin master
+   79  git checkout -b working
+   80  git branch
+   81  mkdir -p linux_practice1/public && cd public
+   82  mkdir -p linux_practice1/public && cd /linux_practice1/public
+   83  mkdir -p linux_practice1/public
+   84  ls
+   85  cd linux_practice1
+   86  ls
+   87  cd public
+   88  touch index.php
+   89  ls
+   90  cp index.php index_bk.php
+   91  ls
+   92  cd ..
+   93  cp -r public tmp
+   94  ls
+   95  cd tmp
+   96  ls
+   97  rm -i index_bk.php
+   98  ls
+   99  cd ../../
+  100  ls
+  101  touch README.md
+  102  ls
+  103  vi README.md
+  104  git status
+  105  git add .
+  106  git status
+  107  git status
+  108  git log
+  109  git commit -m 'practise'
+  110  git log
+  111  mkdir -p linux_practice2/documents
+  112  ls
+  113  cd linux_practice2
+  114  ls
+  115  cd documents
+  116  touch beyond{01..50}.md
+  117  ls
+  118  cd ..
+  119  mkdir trash
+  120  ls
+  121  cd trash
+  122  mv ../documents/beyond{20..40}.md beyond{20..40}
+  123  ls
+  124  cd ../documents
+  125  ls
+  126  mv beyond{20..40}.md ../trash
+  127  ls
+  128  cd ../trash && ls
+  129  cd .. && touch .gitignore
+  130  ls
+  131  cd trash && ls
+  132  cd ..
+  133  touch .gitignore
+  134  ls
+  135  ls -a
+  136  git status
+  137  git add .
+  138  git status
+  139  git commit -m 'practice2-3'
+  140  git log
+  141  vi .gitignore
+  142  cd trash && ls
+  143  vi .gitignore
+  144  ls -a
+  145  cd ..
+  146  vi .gitignore
+  147  git add .
+  148  git status
+  149  git rm --cached beyond2?.md
+  150  git rm --cached beyond2[0-9].md
+  151  git reset --hard HEAD^
+  152  git log
+  153  cd trash && ls
+  154  ls
+  155  ls -a
+  156  cd ..
+  157  ls
+  158  cd linux_practice2
+  159  mkdir documents && cd documents
+  160  touch beyond{01..50}.md
+  161  ls
+  162  cd .. && mkdir trash
+  163  ls
+  164  cd documents
+  165  mv beyond{20..40}.md ../trash
+  166  ls
+  167  cd ../trash
+  168  ls
+  169  git status
+  170  cd .. && touch .gitignore
+  171  ls
+  172  ls -a
+  173  git status
+  174  git status -uall
+  175  vi .gitignore
+  176  git status -uall
+  177  history 300 > exec_command.log
